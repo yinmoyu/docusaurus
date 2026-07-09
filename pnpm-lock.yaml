@@ -2175,7 +2175,7 @@ importers:
         version: 2.6.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       react-medium-image-zoom:
         specifier: ^5.1.6
-        version: 5.4.5(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        version: 5.4.8(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       recma-mdx-displayname:
         specifier: ^0.4.1
         version: 0.4.1
@@ -11462,8 +11462,8 @@ packages:
       react-loadable: '*'
       webpack: '>=4.41.1 || 5.x'
 
-  react-medium-image-zoom@5.4.5:
-    resolution: {integrity: sha512-58QSIRK6X3uw2fSTejJRnH0JuKTZl7ZJYX+sAMaYx4YTEm33gsNdnP5RuQSCnBiAvisQeErqZWAT31bR89WB6g==}
+  react-medium-image-zoom@5.4.8:
+    resolution: {integrity: sha512-72CIldEUaPejjcaDOYIeDsGlWzNKpmxyKgiPi1LBCkWCIGHDLlA2KTeo2uNtmN/m72Y3k/2uWDfon9SDiPbHaA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -24220,7 +24220,7 @@ snapshots:
       react-loadable: '@docusaurus/react-loadable@6.0.0(react@19.2.6)'
       webpack: 5.107.2(@swc/core@1.15.40)(postcss@8.5.15)
 
-  react-medium-image-zoom@5.4.5(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
+  react-medium-image-zoom@5.4.8(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
     dependencies:
       react: 19.2.6
       react-dom: 19.2.6(react@19.2.6)
