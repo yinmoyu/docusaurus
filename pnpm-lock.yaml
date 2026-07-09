@@ -1745,8 +1745,8 @@ importers:
         specifier: 3.10.1
         version: link:../docusaurus-utils-validation
       '@mermaid-js/layout-elk':
-        specifier: ^0.1.9
-        version: 0.1.9(mermaid@11.15.0)
+        specifier: ^0.2.2
+        version: 0.2.2(mermaid@11.15.0)
       mermaid:
         specifier: '>=11.14.0'
         version: 11.15.0
@@ -2144,8 +2144,8 @@ importers:
         specifier: 3.10.1
         version: link:../packages/docusaurus-utils-validation
       '@mermaid-js/layout-elk':
-        specifier: ^0.1.9
-        version: 0.1.9(mermaid@11.15.0)
+        specifier: ^0.2.2
+        version: 0.2.2(mermaid@11.15.0)
       clsx:
         specifier: ^2.0.0
         version: 2.1.1
@@ -4364,8 +4364,8 @@ packages:
       '@types/react': '>=16'
       react: '>=16'
 
-  '@mermaid-js/layout-elk@0.1.9':
-    resolution: {integrity: sha512-HuvaqFZBr6yT9PpWYockvKAZPJVd89yn/UjOYPxhzbZxlybL2v+2BjVCg7MVH6vRs1irUohb/s42HEdec1CCZw==}
+  '@mermaid-js/layout-elk@0.2.2':
+    resolution: {integrity: sha512-vnH3gtqfhyBiRVKNpT8iDENTw18q/OF0GF/SfYfHN43KZpu+6eZDEOMHTfNYAkpmUWJNgtRQFIS6BTc7vH/DYQ==}
     peerDependencies:
       mermaid: ^11.0.2
 
@@ -15836,7 +15836,7 @@ snapshots:
       '@types/react': 19.2.14
       react: 19.2.6
 
-  '@mermaid-js/layout-elk@0.1.9(mermaid@11.15.0)':
+  '@mermaid-js/layout-elk@0.2.2(mermaid@11.15.0)':
     dependencies:
       d3: 7.9.0
       elkjs: 0.9.3
