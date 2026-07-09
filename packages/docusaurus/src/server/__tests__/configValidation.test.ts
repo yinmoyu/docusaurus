@@ -130,6 +130,7 @@ describe('normalizeConfig', () => {
         hooks: {
           onBrokenMarkdownLinks: 'log',
           onBrokenMarkdownImages: 'log',
+          onUnusedMarkdownDirectives: 'log',
         },
       },
     };
@@ -562,6 +563,7 @@ describe('markdown', () => {
       hooks: {
         onBrokenMarkdownLinks: 'log',
         onBrokenMarkdownImages: 'warn',
+        onUnusedMarkdownDirectives: 'warn',
       },
     };
     expect(normalizeMarkdown(markdown)).toEqual(markdown);
@@ -830,6 +832,47 @@ describe('markdown', () => {
       it('rejects null', () => {
         expect(() => normalizeValue(null)).toThrowErrorMatchingInlineSnapshot(`
           [Error: "markdown.hooks.onBrokenMarkdownImages" does not match any of the allowed types
+          ]
+        `);
+      });
+    });
+
+    describe('onUnusedMarkdownDirectives', () => {
+      function normalizeValue(
+        onUnusedMarkdownDirectives?: MarkdownHooks['onUnusedMarkdownDirectives'],
+      ) {
+        return normalizeHooks({
+          onUnusedMarkdownDirectives,
+        }).onUnusedMarkdownDirectives;
+      }
+
+      it('accepts undefined', () => {
+        expect(normalizeValue(undefined)).toBe('warn');
+      });
+
+      it('accepts severity level', () => {
+        expect(normalizeValue('log')).toBe('log');
+      });
+
+      it('rejects number', () => {
+        expect(() =>
+          normalizeValue(
+            // @ts-expect-error: bad value
+            42,
+          ),
+        ).toThrowErrorMatchingInlineSnapshot(`
+          [Error: "markdown.hooks.onUnusedMarkdownDirectives" does not match any of the allowed types
+          ]
+        `);
+      });
+
+      it('accepts function', () => {
+        expect(normalizeValue(() => {})).toBeInstanceOf(Function);
+      });
+
+      it('rejects null', () => {
+        expect(() => normalizeValue(null)).toThrowErrorMatchingInlineSnapshot(`
+          [Error: "markdown.hooks.onUnusedMarkdownDirectives" does not match any of the allowed types
           ]
         `);
       });
